@@ -1,0 +1,11 @@
+global:
+  ingressSubdomain: <dev-cluster-name>.us-south.containers.appdomain.cloud
+  tlsSecretName: <dev-cluster-name>
+
+<app-chart-name>:
+  replicaCount: 3
+  
+  ingress:
+    enabled: true
+    tlsSecretName: <dev-cluster-name>
+
